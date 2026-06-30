@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GADS - Descarga Oficial</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(circle at top, #0f172a, #020617);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* ANIMACIÓN DE FONDO */
+.background-glow {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background: #38bdf8;
+    filter: blur(120px);
+    top: -100px;
+    left: -100px;
+    animation: move 8s infinite alternate;
+}
+
+@keyframes move {
+    from { transform: translate(0,0); }
+    to { transform: translate(200px,200px); }
+}
+
+.container {
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    font-size: 55px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #38bdf8;
+}
+
+.subtitle {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    max-width: 420px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 0 40px rgba(56,189,248,0.2);
+}
+
+.btn {
+    display: block;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.android {
+    background: linear-gradient(90deg, #22c55e, #16a34a);
+    color: white;
+}
+
+.android:hover {
+    transform: scale(1.05);
+}
+
+.ios {
+    background: linear-gradient(90deg, #3b82f6, #2563eb);
+    color: white;
+}
+
+.web {
+    background: linear-gradient(90deg, #f59e0b, #d97706);
+    color: white;
+}
+
+.footer {
+    margin-top: 50px;
+    font-size: 12px;
+    opacity: 0.5;
+}
+</style>
+</head>
+
+<body>
+
+<div class="background-glow"></div>
+
+<div class="container">
+
+    <div class="logo">GADS</div>
+    <div class="subtitle">La plataforma moderna para tu experiencia digital</div>
+
+    <div class="card">
+
+        <h2>📲 Descarga la app oficial</h2>
+        <p>Instala GADS y accede a todas las funciones desde tu móvil</p>
+
+        <!-- CAMBIA AQUÍ TU LINK -->
+        <a class="btn android" href="https://www.appcreator24.com/app4101161-9jzfhn">⬇ Descargar para Android</a>
+
+        <a class="btn ios" href="#">🍎 Próximamente en iPhone</a>
+
+        <a class="btn web" href="#">🌐 Abrir versión web</a>
+
+    </div>
+
+    <div class="footer">
+        © 2026 GADS GABRIEL. Todos los derechos reservados.
+    </div>
+
+</div>
+
+</body>
+</html>
